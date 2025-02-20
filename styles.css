@@ -1,19 +1,68 @@
-#title{
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+#menu {
+    position: fixed;
+    top: 30px;
+    left: 20px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+#menuIcon{
+    font-size: 40px;
+}
+
+
+#header {
+    padding: 10px 20px;
+    background: #000042;
+    color: white;
     text-align: center;
+    
 }
 
-#nav,a{
-    color: black;
+
+#nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #000042;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+    z-index: 1000;
+}
+
+#nav a {
+    padding: 20px 20px;
     text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+    transition: 0.2s;
+
+}
+#nav a:first-child {
+    position: relative;
+    top: 20px;
 }
 
-#menu{
-    position: absolute;
-    top: 25px;
-    left: 15px;
+
+#nav a:hover {
+    background: black;
+
 }
 
 .material-symbols-outlined {
     vertical-align: middle;
 }
-  

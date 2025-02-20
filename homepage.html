@@ -7,24 +7,22 @@
     <title>Galata's Bridge Hotel</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <script src="jcode.js"></script>
 </head>
+
 
 <body>
     <div id="header">
-        <div>
-            <h1 id="title">Galata's Bridge Hotel</h1>
-            <button id="menu">
-                <span class="material-symbols-outlined">menu</span>
-            </button>
-            <div id="nav">
-                <a href="tablebook.html"><span class="material-symbols-outlined">restaurant</span> Book Your
-                    Table</a><br>
-                <a href="roombook.html"><span class="material-symbols-outlined">bed</span> Book Your Room</a>
-            </div>
-        </div>
+        <h1 id="title">Galata's Bridge Hotel</h1>
+        <button id="menu" onclick="toggleNav()">
+            <span id="menuIcon" class="material-symbols-outlined">menu</span>
+        </button>
     </div>
 
-
+    <div id="nav">
+        <a class="navtext" href="tablebook.html"><span class="material-symbols-outlined">restaurant</span> Book Your Table</a>
+        <br><a class="navtext" href="roombook.html"><span class="material-symbols-outlined">bed</span> Book Your Room</a>
+    </div>
 </body>
 
 </html>
